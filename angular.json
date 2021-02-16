@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "AventonUTA"
+  "defaultProject": "AventonUTA",
+  "cli": {
+    "analytics": false
+  }
 }

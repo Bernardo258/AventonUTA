@@ -1,0 +1,20 @@
+<h1 style="text-align: center;">Pasajero</h1>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ingresa tu correo de pasajero</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1" required="required">
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-outline-success" (click)="enviar()" type="button">Enviar</button>
+    </div>
+    <hr>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" (click)="cambio()" class="btn btn-outline-danger">Registrar</button>
+        <div style="text-align: center;" id="emailHelp" class="form-text">Solo el administrador puede registrar pasajeros y choferes</div>
+    </div>
+</form>
