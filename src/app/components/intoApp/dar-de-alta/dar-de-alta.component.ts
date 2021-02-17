@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dar-de-alta',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DarDeAltaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _aRouter: Router) { }
 
   ngOnInit(): void {
   }
-
+Regreso(){
+  this._aRouter.navigate(['../intoChofer'])
+}
 }

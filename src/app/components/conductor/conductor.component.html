@@ -10,11 +10,11 @@
         <input type="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1" required="required">
     </div>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" class="btn btn-outline-success" (click)="enviar()" type="button">Enviar</button>
+        <button type="submit" class="btn btn-success" (click)="enviar()" type="button">Enviar</button>
     </div>
     <hr>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" (click)="cambio()" class="btn btn-outline-danger">Registrar</button>
-        <div style="text-align: center;" id="emailHelp" class="form-text">Solo el administrador puede registrar pasajeros y choferes</div>
+        <button type="submit" (click)="cambio()" class="btn btn-danger">Registrar</button>
+        <div style="text-align: center; color: white;" id="emailHelp" class="form-text">Solo el administrador puede registrar pasajeros y choferes</div>
     </div>
 </form>
